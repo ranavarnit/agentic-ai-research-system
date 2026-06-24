@@ -3,6 +3,20 @@
 # Uses: LangChain, LangGraph, NVIDIA NIM, Web Search, Wikipedia, ArXiv, PDF Upload,
 #       Persistent Memory, Multiple Topics, PDF/Word Export
 
+
+import subprocess
+import sys
+
+
+def install_package(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+try:
+    from duckduckgo_search import DDGS
+except ImportError:
+    install_package("duckduckgo-search")
+    from duckduckgo_search import DDGS
+    
 import os
 import json
 import sqlite3
