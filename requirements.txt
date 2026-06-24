@@ -5,6 +5,7 @@ langchain-huggingface
 langchain-text-splitters
 langgraph
 duckduckgo-search
+ddgs
 streamlit
 fpdf
 python-docx
