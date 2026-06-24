@@ -11,3 +11,4 @@ fpdf
 python-docx
 PyPDF2
 sentence-transformers
+wikipedia
